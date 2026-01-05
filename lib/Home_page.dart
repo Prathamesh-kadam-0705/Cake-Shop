@@ -119,7 +119,8 @@ class Home_page_state extends State<Home_page>{
     return Scaffold(
       
       appBar: AppBar(
-        toolbarHeight: 170,
+          automaticallyImplyLeading: false,
+          toolbarHeight: 170,
         title:Container(
          decoration:BoxDecoration(
               color: Colors.pink.shade300,
@@ -204,18 +205,26 @@ class Home_page_state extends State<Home_page>{
                 ],
               ),
               SizedBox(height: 6,),
-              TextField(
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: Colors.white,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30)
-                  ),
-                    hintText: 'Search',
-                      prefixIcon: Icon(Icons.search)
-                ),
-          
+
+              IgnorePointer(
+                  child: TextField(
+                    readOnly: true,                     // prevent typing
+                    showCursor: false,                  // hide cursor
+                    enableInteractiveSelection: false,  // disable selection
+                    focusNode: AlwaysDisabledFocusNode(),
+                    decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(30)
+                        ),
+                        hintText: 'Search',
+                        prefixIcon: Icon(Icons.search)
+                    ),
+
+                  )
               )
+
             ],
           ),
         )
@@ -381,4 +390,9 @@ class Home_page_state extends State<Home_page>{
       ),
     );
   }
+}
+
+class AlwaysDisabledFocusNode extends FocusNode {
+  @override
+  bool get hasFocus => false;
 }

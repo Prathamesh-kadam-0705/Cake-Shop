@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_first_app/HomePage.dart';
-import 'package:my_first_app/OwnerHomePage.dart';
 import 'package:my_first_app/Themes.dart';
 import 'package:my_first_app/Home_page.dart';
 

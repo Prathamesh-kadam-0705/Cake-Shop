@@ -33,13 +33,13 @@ class ContainerStyle{
 
     color: Colors.grey[100],
     borderRadius: BorderRadius.circular(10),
-    boxShadow: [
-      BoxShadow(
-        blurRadius: 10,
-        offset: Offset(0, 5),
-        color: Colors.black
-      )
-    ]
+    // boxShadow: [
+    //   BoxShadow(
+    //     blurRadius: 10,
+    //     // offset: Offset(0, 5),
+    //     color: Colors.black
+    //   )
+    // ]
   );
   static EdgeInsets iconPadding = EdgeInsets.all(5);
   static EdgeInsets iconMargin = EdgeInsets.all(5);
@@ -48,13 +48,13 @@ class ScrollingImgDecoration{
 
   static BoxDecoration imgContainer = BoxDecoration(
       borderRadius: BorderRadius.circular(10),
-      boxShadow: [
-        BoxShadow(
-            blurRadius: 10,
-            offset: Offset(0, 5),
-            color: Colors.black
-        )
-      ]
+      // boxShadow: [
+      //   BoxShadow(
+      //       blurRadius: 10,
+      //       // offset: Offset(0, 5),
+      //       color: Colors.black
+      //   )
+      // ]
   );
   static EdgeInsets imgMargin = EdgeInsets.only(left: 15,right: 15,top: 5,bottom: 5);
 
@@ -76,13 +76,13 @@ class forOutLinedButton2{
         color: color,
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: Colors.black,width: 1),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black,
-            blurRadius: 10,
-            offset: Offset(0, 3)
-          )
-        ]
+        // boxShadow: [
+        //   BoxShadow(
+        //     color: Colors.black,
+        //     blurRadius: 10,
+        //     // offset: Offset(0, 3)
+        //   )
+        // ]
       );
 
   }
