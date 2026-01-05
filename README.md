@@ -1,4 +1,4 @@
-# my_first_app
+# Cake Shop
 
 A new Flutter project.
 
